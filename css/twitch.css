@@ -1,0 +1,129 @@
+.wrapper {
+	width: 86%;
+	margin: 0 auto;
+}
+
+.header {
+	position: relative;
+	padding: 10px 20px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	background: #223843;
+}
+
+.text-hd { color: #fff; }
+
+.all-circle, 
+.online-circle, 
+.offline-circle { 
+	font-size: .9em; 
+}
+.online-circle { color: #17c150; }
+.offline-circle { color: #c11730; }
+
+.all-opt,
+.online-opt,
+.offline-opt {
+	position: absolute;
+	right: -55px;
+	background: #e1e1e6;
+	padding: 2px 5px;
+	transition: all .5s ease-in-out;
+	font-size: .9em;
+	font-weight: 700;
+	width: 65px;
+}
+
+.all-opt { top: 10px; }
+.online-opt { top: 35px; }
+.offline-opt { top: 60px; }
+
+.search-box { margin-bottom: 20px; }
+#search-user,
+#search-btn {
+	font-size: 1.5em;
+}
+#search-user {
+	width: 70%;
+}
+#search-btn{ margin-left: -3px; }
+
+.active,
+.all-opt:hover, 
+.online-opt:hover, 
+.offline-opt:hover {
+	right: 0 !important;
+	cursor: pointer;
+}
+
+/*#users {
+	width: 98%;
+	margin: 0 auto;
+}*/
+
+#users.usr-clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+.user {
+	float: left;
+	width: 290px;
+	margin: 0 30px 30px 0;
+	border: 1px solid;
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+}
+
+.user:hover {
+	transform: scale(1.1, 1.1);
+}
+
+.user a {
+	text-decoration: none;
+}
+
+.disp_name, .online, .offline {
+	padding: 5px 10px;
+	font-size: 1.2em;
+	font-weight: 700;
+	color: #000;
+}
+.online { background: #17c150; color: #fff;}
+
+.offline { background: #c11730; color: #fff;}
+
+.user figure {
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.user figure img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-top: .1px solid #000;
+}
+
+.user figure figcaption {
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	transition: all 0.3s ease-in-out;
+	transition-delay: 0.3s;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.user:hover figure figcaption {
+	left: 0%;
+}
