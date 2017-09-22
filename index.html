@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Twitch Streamer</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/twitch.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<h1 class="text-hd">Twitch Steamers</h1>
+			<div class="all-opt active"><i class="fa fa-circle all-circle" aria-hidden="true"></i>&nbsp;&nbsp;All</div>
+			<div class="online-opt"><i class="fa fa-circle online-circle" aria-hidden="true"></i>&nbsp;&nbsp;Online</div>
+			<div class="offline-opt"><i class="fa fa-circle offline-circle" aria-hidden="true"></i>&nbsp;&nbsp;Offline</div>
+		</div>
+		<div class="search-box">
+			<input type="text" name="search-user" placeholder="Search / add user" id="search-user">
+			<button type="button" id="search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+		</div>
+		<div id="users" class="usr-clearfix"></div>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+	<script type="text/javascript" src="js/twitch.js"></script>
+</body>
+</html>
